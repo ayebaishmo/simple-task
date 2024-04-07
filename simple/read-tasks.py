@@ -11,10 +11,6 @@ class Tasks:
         self.all_tasks.remove(dele)
         return self.all_tasks
     
-    def list_display_tasks(self):
-        for task in self.all_tasks:
-            return task
-    
     def __repr__(self):
         return self.tasks_display
     
@@ -23,6 +19,4 @@ if __name__=='__main__':
     print(Task1.create_task("First task"))
     print(Task1.create_task("Second tasks"))
     print(Task1.create_task("Third tasks"))
-    print(Task1.remove_task("First task"))
-    print(Task1.list_display_tasks())
-        
+    print(Task1.remove_task("First task"))        
